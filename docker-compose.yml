@@ -4,7 +4,7 @@ services:
     image: web
     build:
       context: .
-      dockerfile: ./docker/web/Dockerfile
+      dockerfile: https://github.com/amir-akhavans/ecs-project/blob/main/docker/web/Dockerfile
     working_dir: /var/www
     ports:
       - 8080:80
