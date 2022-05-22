@@ -3,7 +3,7 @@ FROM php:8.1-apache
 RUN docker-php-ext-install pdo_mysql
 
 # Copy Apache configuration
-COPY ./ecs-project/docker/web/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY ./docker/web/000-default.conf /etc/apache2/sites-available/000-default.conf
 
 # Copy code
-COPY ./ecs-project/public /var/www/public
+COPY ./public /var/www/public
